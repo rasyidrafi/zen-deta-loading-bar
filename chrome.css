@@ -7,12 +7,12 @@
  */
 :root {
   --mod-detaloadingbar-maincolor-light: var(--mod-detaloadingbar-maincolor-light, rgba(243,202,176,255));
-  --mod-detaloadingbar-maincolor-dark: var(--mod-detaloadingbar-maincolor-dark, rgba(87,65,50,255));
+  --mod-detaloadingbar-maincolor-dark: var(--mod-detaloadingbar-maincolor-dark, rgba(45,45,45,255));
   --mod-detaloadingbar-middlecolor-light: var(--mod-detaloadingbar-middlecolor-light, rgba(255,255,255,255));
-  --mod-detaloadingbar-middlecolor-dark: var(--mod-detaloadingbar-middlecolor-dark, rgba(255,255,255,255));
+  --mod-detaloadingbar-middlecolor-dark: var(--mod-detaloadingbar-middlecolor-dark, rgba(65,65,65,255));
   --mod-detaloadingbar-thickness: var(--mod-detaloadingbar-thickness, 6px);
-  --mod-detaloadingbar-boxshadow-light: var(--mod-detaloadingbar-boxshadow-light, 0 2px 12px 0 rgba(0,0,0,0.18), 0 1.5px 4px 0 rgba(0,0,0,0.12));
-  --mod-detaloadingbar-boxshadow-dark: var(--mod-detaloadingbar-boxshadow-dark, 0 2px 12px 0 rgba(0,0,0,0.32), 0 1.5px 4px 0 rgba(0,0,0,0.22));
+  --mod-detaloadingbar-boxshadow-light: var(--mod-detaloadingbar-boxshadow-light, 0 2px 12px 0 rgba(0,0,0,0.25), 0 1.5px 4px 0 rgba(0,0,0,0.15));
+  --mod-detaloadingbar-boxshadow-dark: var(--mod-detaloadingbar-boxshadow-dark, 0 2px 12px 0 rgba(255,255,255,0.25), 0 1.5px 4px 0 rgba(255,255,255,0.15));
 
   /* Default fallback for main/middle color */
   --mod-detaloadingbar-maincolor: var(--mod-detaloadingbar-maincolor-light);
@@ -44,7 +44,7 @@
   left: 50% !important;
   transform: translateX(-50%) !important;
   height: var(--mod-detaloadingbar-thickness) !important; /* Use the variable */
-  border-radius: 4px !important;
+  border-radius: calc(var(--mod-detaloadingbar-thickness) / 2) !important;
   z-index: 9999 !important;
   pointer-events: none !important; /* Makes sure you can't click on it */
   /* Static gradient background */
@@ -81,27 +81,27 @@
 @keyframes zen-loading-pulse {
   0% {
     width: 20px;
-    filter: blur(3px);
+    filter: blur(1.8px);
     opacity: 0.3;
     transform: translateX(-50%) scale(0.9);
   }
   25% {
     opacity: 0.5;
-    filter: blur(2px);
+    filter: blur(1.8px);
   }
   50% {
     opacity: 0.7;
-    filter: blur(1px);
+    filter: blur(1.8px);
     transform: translateX(-50%) scale(0.95);
   }
   75% {
     opacity: 0.9;
-    filter: blur(0.5px);
+    filter: blur(1.8px);
     transform: translateX(-50%) scale(1);
   }
   100% {
     width: 120px;
-    filter: blur(0px);
+    filter: blur(1.8px); /* Always keep a little blur */
     opacity: 1;
     transform: translateX(-50%) scale(1.02);
   }

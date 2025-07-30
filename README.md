@@ -50,9 +50,15 @@ This theme includes several customization options that can be configured through
 ### Loading Bar Settings
 
 - **Enable Deta Loading Bar**: Master toggle to enable or disable the loading bar (default: enabled)
-- **Main color (Light/Dark mode)**: Primary color for the gradient animation, separately configurable for light and dark mode
-- **Middle color (Light/Dark mode)**: Secondary color for the gradient center, separately configurable for light and dark mode
-- **Box shadow color (Light/Dark mode)**: Shadow color and strength for the loading bar, separately configurable for light and dark mode
+- **Main color (Light/Dark mode)**: Primary color for the gradient animation, separately configurable for light and dark mode  
+  - Default (Light): `rgba(243,202,176,255)`  
+  - Default (Dark): `rgba(45,45,45,255)`
+- **Middle color (Light/Dark mode)**: Secondary color for the gradient center, separately configurable for light and dark mode  
+  - Default (Light): `rgba(255,255,255,255)`  
+  - Default (Dark): `rgba(65,65,65,255)`
+- **Box shadow color (Light/Dark mode)**: Shadow color and strength for the loading bar, separately configurable for light and dark mode  
+  - Default (Light): `0 2px 12px 0 rgba(0,0,0,0.25), 0 1.5px 4px 0 rgba(0,0,0,0.15)`  
+  - Default (Dark): `0 2px 12px 0 rgba(255,255,255,0.25), 0 1.5px 4px 0 rgba(255,255,255,0.15)`
 - **Thickness**: Height of the loading bar (default: `6px`)
 
 ### How to Configure
@@ -70,7 +76,8 @@ This theme includes several customization options that can be configured through
 ### Color Examples
 
 You can use various color formats:
-- **RGBA**: `rgba(243,202,176,255)` - Light peach with full opacity
+- **RGBA**: `rgba(243,202,176,255)` - Light peach with full opacity (default light)
+- **RGBA**: `rgba(45,45,45,255)` - Dark gray (default dark)
 - **Hex**: `#573241` - Dark reddish-brown
 - **Named colors**: `steelblue`, `crimson`, `gold`
 - **HSL**: `hsl(120, 100%, 50%)` - Pure green
@@ -78,13 +85,13 @@ You can use various color formats:
 ### Box Shadow Examples
 
 You can use standard CSS box-shadow syntax:
-- **Light mode**: `0 2px 12px 0 rgba(0,0,0,0.18), 0 1.5px 4px 0 rgba(0,0,0,0.12)`
-- **Dark mode**: `0 2px 12px 0 rgba(0,0,0,0.32), 0 1.5px 4px 0 rgba(0,0,0,0.22)`
+- **Light mode (default)**: `0 2px 12px 0 rgba(0,0,0,0.25), 0 1.5px 4px 0 rgba(0,0,0,0.15)`
+- **Dark mode (default)**: `0 2px 12px 0 rgba(255,255,255,0.25), 0 1.5px 4px 0 rgba(255,255,255,0.15)`
 
 ### Thickness Examples
 
 You can specify thickness using CSS units:
-- **Pixels**: `6px`
+- **Pixels (default)**: `6px`
 - **Em units**: `0.2em`, `0.5em`
 - **Rem units**: `0.25rem`, `0.5rem`
 
@@ -125,4 +132,4 @@ Created by [rasyidrafi](https://github.com/rasyidrafi)
 
 ---
 
-*Version 1.3.0 - Last updated: July 30, 2025*
+*Version 1.3.1 - Last updated: July 30, 2025*

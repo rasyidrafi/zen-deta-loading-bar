@@ -15,7 +15,7 @@
         "property": "mod.detaloadingbar.maincolor.dark",
         "label": "Main color (Dark mode)",
         "type": "string",
-        "defaultValue": "rgba(87,65,50,255)"
+        "defaultValue": "rgba(45,45,45,255)"
     },
     {
         "property": "mod.detaloadingbar.middlecolor.light",
@@ -27,7 +27,7 @@
         "property": "mod.detaloadingbar.middlecolor.dark",
         "label": "Middle color (Dark mode)",
         "type": "string",
-        "defaultValue": "rgba(255,255,255,255)"
+        "defaultValue": "rgba(65,65,65,255)"
     },
     {
         "property": "mod.detaloadingbar.thickness",
@@ -37,14 +37,14 @@
     },
     {
         "property": "mod.detaloadingbar.boxshadow.light",
-        "label": "Box shadow color (Light mode)",
+        "label": "Box shadow (Light mode)",
         "type": "string",
-        "defaultValue": "0 2px 12px 0 rgba(0,0,0,0.18), 0 1.5px 4px 0 rgba(0,0,0,0.12)"
+        "defaultValue": "0 2px 12px 0 rgba(0,0,0,0.25), 0 1.5px 4px 0 rgba(0,0,0,0.15)"
     },
     {
         "property": "mod.detaloadingbar.boxshadow.dark",
-        "label": "Box shadow color (Dark mode)",
+        "label": "Box shadow (Dark mode)",
         "type": "string",
-        "defaultValue": "0 2px 12px 0 rgba(0,0,0,0.32), 0 1.5px 4px 0 rgba(0,0,0,0.22)"
+        "defaultValue": "0 2px 12px 0 rgba(255,255,255,0.25), 0 1.5px 4px 0 rgba(255,255,255,0.15)"
     }
 ]
