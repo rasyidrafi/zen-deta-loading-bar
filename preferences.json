@@ -1,0 +1,26 @@
+[
+    {
+      "property": "mod.detaloadingbar.enabled",
+      "label": "Enable Deta Loading Bar",
+      "type": "checkbox",
+      "defaultValue": true
+    },
+    {
+        "property": "mod.detaloadingbar.maincolor",
+        "label": "Main color",
+        "type": "string",
+        "defaultValue": "rgba(87,65,50,255)"
+    },
+    {
+        "property": "mod.detaloadingbar.middlecolor",
+        "label": "Middle color",
+        "type": "string",
+        "defaultValue": "rgba(255,255,255,255)"
+    },
+    {
+        "property": "mod.detaloadingbar.thickness",
+        "label": "Thickness",
+        "type": "string",
+        "defaultValue": "3px"
+    }
+]
