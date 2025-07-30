@@ -1,9 +1,5 @@
 {
   "id": "c9ee0d97-d2d6-40fd-8f85-549fe000b868",
-  "js": true,
-  "js_files": [
-    "https://raw.githubusercontent.com/rasyidrafi/zen-deta-loading-bar/refs/heads/main/deta-loading-bar.uc.js"
-  ],
   "name": "Deta Loading Bar",
   "description": "A simple loading bar on top of the page similar to the one used in Deta Surf browser. Currently only works on Zen Browser.",
   "homepage": "https://github.com/rasyidrafi/zen-deta-loading-bar",
@@ -14,7 +10,7 @@
   "readme": "https://raw.githubusercontent.com/rasyidrafi/zen-deta-loading-bar/refs/heads/main/README.md",
   "preferences": "https://raw.githubusercontent.com/rasyidrafi/zen-deta-loading-bar/refs/heads/main/preferences.json",
   "author": "rasyidrafi",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "tags": [
     "Animation"
   ],

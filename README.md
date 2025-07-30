@@ -117,4 +117,4 @@ Created by [rasyidrafi](https://github.com/rasyidrafi)
 
 ---
 
-*Version 1.1.0 - Last updated: July 30, 2025*
+*Version 1.2.0 - Last updated: July 30, 2025*
