@@ -6,14 +6,26 @@
       "defaultValue": true
     },
     {
-        "property": "mod.detaloadingbar.maincolor",
-        "label": "Main color",
+        "property": "mod.detaloadingbar.maincolor.light",
+        "label": "Main color (Light mode)",
+        "type": "string",
+        "defaultValue": "rgba(243,202,176,255)"
+    },
+    {
+        "property": "mod.detaloadingbar.maincolor.dark",
+        "label": "Main color (Dark mode)",
         "type": "string",
         "defaultValue": "rgba(87,65,50,255)"
     },
     {
-        "property": "mod.detaloadingbar.middlecolor",
-        "label": "Middle color",
+        "property": "mod.detaloadingbar.middlecolor.light",
+        "label": "Middle color (Light mode)",
+        "type": "string",
+        "defaultValue": "rgba(255,255,255,255)"
+    },
+    {
+        "property": "mod.detaloadingbar.middlecolor.dark",
+        "label": "Middle color (Dark mode)",
         "type": "string",
         "defaultValue": "rgba(255,255,255,255)"
     },
@@ -22,5 +34,17 @@
         "label": "Thickness",
         "type": "string",
         "defaultValue": "6px"
+    },
+    {
+        "property": "mod.detaloadingbar.boxshadow.light",
+        "label": "Box shadow color (Light mode)",
+        "type": "string",
+        "defaultValue": "0 2px 12px 0 rgba(0,0,0,0.18), 0 1.5px 4px 0 rgba(0,0,0,0.12)"
+    },
+    {
+        "property": "mod.detaloadingbar.boxshadow.dark",
+        "label": "Box shadow color (Dark mode)",
+        "type": "string",
+        "defaultValue": "0 2px 12px 0 rgba(0,0,0,0.32), 0 1.5px 4px 0 rgba(0,0,0,0.22)"
     }
 ]

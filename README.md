@@ -50,8 +50,9 @@ This theme includes several customization options that can be configured through
 ### Loading Bar Settings
 
 - **Enable Deta Loading Bar**: Master toggle to enable or disable the loading bar (default: enabled)
-- **Main color**: Primary color for the gradient animation (default: `rgba(243,202,176,255)`)
-- **Middle color**: Secondary color for the gradient center (default: `rgba(255,255,255,255)`)
+- **Main color (Light/Dark mode)**: Primary color for the gradient animation, separately configurable for light and dark mode
+- **Middle color (Light/Dark mode)**: Secondary color for the gradient center, separately configurable for light and dark mode
+- **Box shadow color (Light/Dark mode)**: Shadow color and strength for the loading bar, separately configurable for light and dark mode
 - **Thickness**: Height of the loading bar (default: `6px`)
 
 ### How to Configure
@@ -60,8 +61,9 @@ This theme includes several customization options that can be configured through
 2. Navigate to the theme settings for "Deta Loading Bar"
 3. Adjust the following options as desired:
    - Toggle the loading bar on/off as needed
-   - Customize the main color to match your browser theme
-   - Set the middle color for the gradient effect
+   - Customize the main color for both light and dark mode
+   - Set the middle color for both light and dark mode
+   - Set the box shadow color for both light and dark mode
    - Change the thickness to your preferred bar height
 4. Changes will apply automatically
 
@@ -72,6 +74,12 @@ You can use various color formats:
 - **Hex**: `#573241` - Dark reddish-brown
 - **Named colors**: `steelblue`, `crimson`, `gold`
 - **HSL**: `hsl(120, 100%, 50%)` - Pure green
+
+### Box Shadow Examples
+
+You can use standard CSS box-shadow syntax:
+- **Light mode**: `0 2px 12px 0 rgba(0,0,0,0.18), 0 1.5px 4px 0 rgba(0,0,0,0.12)`
+- **Dark mode**: `0 2px 12px 0 rgba(0,0,0,0.32), 0 1.5px 4px 0 rgba(0,0,0,0.22)`
 
 ### Thickness Examples
 
@@ -117,4 +125,4 @@ Created by [rasyidrafi](https://github.com/rasyidrafi)
 
 ---
 
-*Version 1.2.0 - Last updated: July 30, 2025*
+*Version 1.3.0 - Last updated: July 30, 2025*

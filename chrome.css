@@ -5,11 +5,28 @@
  *  This targets the browserStack browser content wrapper
  *  and is triggered ONLY on page load via the [waiting] attribute.
  */
-
 :root {
-  --mod-detaloadingbar-maincolor: var(--mod-detaloadingbar-maincolor, rgba(243,202,176,255));
-  --mod-detaloadingbar-middlecolor: var(--mod-detaloadingbar-middlecolor, rgba(255,255,255,255));
+  --mod-detaloadingbar-maincolor-light: var(--mod-detaloadingbar-maincolor-light, rgba(243,202,176,255));
+  --mod-detaloadingbar-maincolor-dark: var(--mod-detaloadingbar-maincolor-dark, rgba(87,65,50,255));
+  --mod-detaloadingbar-middlecolor-light: var(--mod-detaloadingbar-middlecolor-light, rgba(255,255,255,255));
+  --mod-detaloadingbar-middlecolor-dark: var(--mod-detaloadingbar-middlecolor-dark, rgba(255,255,255,255));
   --mod-detaloadingbar-thickness: var(--mod-detaloadingbar-thickness, 6px);
+  --mod-detaloadingbar-boxshadow-light: var(--mod-detaloadingbar-boxshadow-light, 0 2px 12px 0 rgba(0,0,0,0.18), 0 1.5px 4px 0 rgba(0,0,0,0.12));
+  --mod-detaloadingbar-boxshadow-dark: var(--mod-detaloadingbar-boxshadow-dark, 0 2px 12px 0 rgba(0,0,0,0.32), 0 1.5px 4px 0 rgba(0,0,0,0.22));
+
+  /* Default fallback for main/middle color */
+  --mod-detaloadingbar-maincolor: var(--mod-detaloadingbar-maincolor-light);
+  --mod-detaloadingbar-middlecolor: var(--mod-detaloadingbar-middlecolor-light);
+  --mod-detaloadingbar-boxshadow: var(--mod-detaloadingbar-boxshadow-light);
+}
+
+/* Override color variables based on color scheme */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --mod-detaloadingbar-maincolor: var(--mod-detaloadingbar-maincolor-dark);
+    --mod-detaloadingbar-middlecolor: var(--mod-detaloadingbar-middlecolor-dark);
+    --mod-detaloadingbar-boxshadow: var(--mod-detaloadingbar-boxshadow-dark);
+  }
 }
 
 /* First, ensure the browserStack can act as a positioning container */
@@ -30,7 +47,6 @@
   border-radius: 4px !important;
   z-index: 9999 !important;
   pointer-events: none !important; /* Makes sure you can't click on it */
-
   /* Static gradient background */
   background: linear-gradient(
     to right,
@@ -38,38 +54,55 @@
     var(--mod-detaloadingbar-middlecolor),
     var(--mod-detaloadingbar-maincolor)
   ) !important;
-
+  /* Add drop shadow */
+  box-shadow: var(--mod-detaloadingbar-boxshadow) !important;
   /* Hidden by default */
   opacity: 0 !important;
   visibility: hidden !important;
   transition: opacity 0.2s ease, visibility 0.2s ease !important;
 }
 
-/* Show loading bar ONLY when any tab is busy */
+/* Show loading bar ONLY when the current active tab is busy */
 /* Use :has() if supported for best reliability */
-#main-window:has(.tabbrowser-tab[busy]) .browserStack::before {
+#main-window:has(.tabbrowser-tab[selected][busy]) .browserStack::before {
   opacity: 1 !important;
   visibility: visible !important;
-  animation: zen-loading-pulse 0.8s ease-out infinite alternate !important;
+  animation: zen-loading-pulse 1.2s cubic-bezier(0.4, 0, 0.2, 1) infinite alternate !important;
 }
 
-/* Fallback for browsers without :has() support: show for each busy tab's browserStack */
-.tabbrowser-tab[busy] .browserStack::before {
+/* Fallback for some browser structures */
+.tabbrowser-tab[selected][busy] .browserStack::before {
   opacity: 1 !important;
   visibility: visible !important;
-  animation: zen-loading-pulse 0.8s ease-out infinite alternate !important;
+  animation: zen-loading-pulse 1.2s cubic-bezier(0.4, 0, 0.2, 1) infinite alternate !important;
 }
 
-/* Keyframes for the one-way growth animation */
+/* Improved keyframes for smoother pulse animation */
 @keyframes zen-loading-pulse {
-  from {
-    width: 25px;
-    filter: blur(5px);
-    opacity: 0;
+  0% {
+    width: 20px;
+    filter: blur(3px);
+    opacity: 0.3;
+    transform: translateX(-50%) scale(0.9);
   }
-  to {
-    width: 100px;
+  25% {
+    opacity: 0.5;
+    filter: blur(2px);
+  }
+  50% {
+    opacity: 0.7;
+    filter: blur(1px);
+    transform: translateX(-50%) scale(0.95);
+  }
+  75% {
+    opacity: 0.9;
+    filter: blur(0.5px);
+    transform: translateX(-50%) scale(1);
+  }
+  100% {
+    width: 120px;
     filter: blur(0px);
     opacity: 1;
+    transform: translateX(-50%) scale(1.02);
   }
 }
