@@ -6,7 +6,7 @@ A sleek top loading bar theme extension for Zen Browser that displays an animate
 
 - 🎯 **Smooth Top Loading Bar** - Displays an elegant animated loading bar at the top of pages
 - 🎨 **Customizable Colors** - Configure main and middle colors of the loading bar gradient
-- 🌈 **Gradient Animation** - Beautiful flowing gradient effect that moves across the bar
+- 🌈 **Pulse Animation** - Beautiful pulsing effect that grows and shrinks during loading
 - ⚡ **CSS-Only Implementation** - Lightweight solution using pure CSS animations
 - 🎛️ **Easy Toggle** - Simple enable/disable option through preferences
 - 📏 **Adjustable Thickness** - Customizable bar height to match your preference
@@ -50,7 +50,7 @@ This theme includes several customization options that can be configured through
 ### Loading Bar Settings
 
 - **Enable Deta Loading Bar**: Master toggle to enable or disable the loading bar (default: enabled)
-- **Main color**: Primary color for the gradient animation (default: `rgba(87,65,50,255)`)
+- **Main color**: Primary color for the gradient animation (default: `rgba(243,202,176,255)`)
 - **Middle color**: Secondary color for the gradient center (default: `rgba(255,255,255,255)`)
 - **Thickness**: Height of the loading bar (default: `6px`)
 
@@ -68,7 +68,7 @@ This theme includes several customization options that can be configured through
 ### Color Examples
 
 You can use various color formats:
-- **RGBA**: `rgba(87,65,50,255)` - Brown with full opacity
+- **RGBA**: `rgba(243,202,176,255)` - Light peach with full opacity
 - **Hex**: `#573241` - Dark reddish-brown
 - **Named colors**: `steelblue`, `crimson`, `gold`
 - **HSL**: `hsl(120, 100%, 50%)` - Pure green
@@ -85,18 +85,18 @@ You can specify thickness using CSS units:
 This theme enhances your browsing experience by:
 
 - **Visual Loading Feedback**: Provides clear indication when pages are loading
-- **Smooth Animation**: Features a flowing gradient that moves horizontally across the bar
-- **Non-intrusive Design**: Sits at the very top with minimal visual interference
-- **Smart Positioning**: Uses high z-index to ensure visibility above other elements
+- **Pulse Animation**: Features a growing and shrinking effect with blur transition
+- **Non-intrusive Design**: Sits at the top with minimal visual interference
+- **Smart Positioning**: Centered at the top of the browser stack with high z-index for visibility
 - **No Click Interference**: Pointer events are disabled so the bar doesn't interfere with page interaction
-- **Automatic Display**: Shows only when pages are actually loading (`[waiting]` attribute)
+- **Automatic Display**: Shows only when pages are actually loading
 
 ## Technical Details
 
-- **Animation Duration**: 1.5 seconds linear infinite loop
+- **Animation Duration**: 0.8s ease-out infinite alternate pulse
 - **Bar Height**: Customizable thickness (default: 6px)
-- **Positioning**: Absolute positioning at the top of the content wrapper
-- **Gradient Size**: 200% width for smooth animation effect
+- **Positioning**: Absolute positioning at the top of the browser stack, centered horizontally
+- **Animation Effect**: Pulse animation from 25px to 100px width with blur effect
 - **Z-Index**: 9999 for maximum visibility
 
 ## Compatibility
@@ -117,4 +117,4 @@ Created by [rasyidrafi](https://github.com/rasyidrafi)
 
 ---
 
-*Version 1.0.1 - Last updated: July 30, 2025*
+*Version 1.1.0 - Last updated: July 30, 2025*

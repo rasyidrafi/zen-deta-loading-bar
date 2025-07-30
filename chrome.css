@@ -36,11 +36,17 @@
     var(--mod-detaloadingbar-middlecolor),
     var(--mod-detaloadingbar-maincolor)
   ) !important;
+
+  /* Hidden by default */
+  opacity: 0 !important;
+  visibility: hidden !important;
+  transition: opacity 0.2s ease, visibility 0.2s ease !important;
 }
 
-/* Show loading bar */
-#main-window .browserStack::before {
+/* Show loading bar when loading class is present */
+#main-window .browserStack.loading::before {
   opacity: 1 !important;
+  visibility: visible !important;
   animation: zen-loading-pulse 0.8s ease-out infinite alternate !important;
 }
 
