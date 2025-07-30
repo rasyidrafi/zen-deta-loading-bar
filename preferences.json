@@ -21,6 +21,6 @@
         "property": "mod.detaloadingbar.thickness",
         "label": "Thickness",
         "type": "string",
-        "defaultValue": "3px"
+        "defaultValue": "6px"
     }
 ]

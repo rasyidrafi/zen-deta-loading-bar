@@ -52,7 +52,7 @@ This theme includes several customization options that can be configured through
 - **Enable Deta Loading Bar**: Master toggle to enable or disable the loading bar (default: enabled)
 - **Main color**: Primary color for the gradient animation (default: `rgba(87,65,50,255)`)
 - **Middle color**: Secondary color for the gradient center (default: `rgba(255,255,255,255)`)
-- **Thickness**: Height of the loading bar (default: `3px`)
+- **Thickness**: Height of the loading bar (default: `6px`)
 
 ### How to Configure
 
@@ -76,7 +76,7 @@ You can use various color formats:
 ### Thickness Examples
 
 You can specify thickness using CSS units:
-- **Pixels**: `3px`, `5px`, `10px`
+- **Pixels**: `6px`
 - **Em units**: `0.2em`, `0.5em`
 - **Rem units**: `0.25rem`, `0.5rem`
 
@@ -94,7 +94,7 @@ This theme enhances your browsing experience by:
 ## Technical Details
 
 - **Animation Duration**: 1.5 seconds linear infinite loop
-- **Bar Height**: Customizable thickness (default: 3px)
+- **Bar Height**: Customizable thickness (default: 6px)
 - **Positioning**: Absolute positioning at the top of the content wrapper
 - **Gradient Size**: 200% width for smooth animation effect
 - **Z-Index**: 9999 for maximum visibility
@@ -117,4 +117,4 @@ Created by [rasyidrafi](https://github.com/rasyidrafi)
 
 ---
 
-*Version 1.0.0 - Last updated: July 30, 2025*
+*Version 1.0.1 - Last updated: July 30, 2025*
