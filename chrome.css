@@ -7,6 +7,8 @@
  */
 :root {
   --mod-detaloadingbar-thickness: var(--mod-detaloadingbar-thickness, 6px);
+  --mod-detaloadingbar-minwidth: var(--mod-detaloadingbar-minwidth, 20px);
+  --mod-detaloadingbar-maxwidth: var(--mod-detaloadingbar-maxwidth, 120px);
   --mod-detaloadingbar-blur-intensity: var(--mod-detaloadingbar-blur-intensity, 1.8px);
   --mod-detaloadingbar-boxshadow: var(--mod-detaloadingbar-boxshadow, 0 2px 12px 0 rgba(0,0,0,0.25), 0 1.5px 4px 0 rgba(0,0,0,0.15));
 }
@@ -92,7 +94,7 @@
 @media (-moz-bool-pref: "mod.detaloadingbar.blur.enabled") {
   @keyframes zen-loading-pulse {
     0% {
-      width: 20px;
+      width: var(--mod-detaloadingbar-minwidth, 20px);
       filter: blur(var(--mod-detaloadingbar-blur-intensity));
       opacity: 0.3;
       transform: translateX(-50%) scale(0.9);
@@ -112,7 +114,7 @@
       transform: translateX(-50%) scale(1);
     }
     100% {
-      width: 120px;
+      width: var(--mod-detaloadingbar-maxwidth, 120px);
       filter: blur(var(--mod-detaloadingbar-blur-intensity));
       opacity: 1;
       transform: translateX(-50%) scale(1.02);
@@ -123,7 +125,7 @@
 @media not (-moz-bool-pref: "mod.detaloadingbar.blur.enabled") {
   @keyframes zen-loading-pulse {
     0% {
-      width: 20px;
+      width: var(--mod-detaloadingbar-minwidth, 20px);
       opacity: 0.3;
       transform: translateX(-50%) scale(0.9);
     }
@@ -139,7 +141,7 @@
       transform: translateX(-50%) scale(1);
     }
     100% {
-      width: 120px;
+      width: var(--mod-detaloadingbar-maxwidth, 120px);
       opacity: 1;
       transform: translateX(-50%) scale(1.02);
     }

@@ -64,6 +64,8 @@ This theme includes extensive customization options that can be configured throu
 ### Visual Effects
 
 - **Thickness**: Height of the loading bar (default: `6px`)
+- **Minimum Width**: Starting width of the loading bar animation (default: `20px`)
+- **Maximum Width**: Ending width of the loading bar animation (default: `120px`)
 - **Enable/Disable Box Shadow**: Toggle shadow effects (default: enabled)
 - **Custom Box shadow**: Customize shadow appearance (default: `0 2px 12px 0 rgba(0,0,0,0.25), 0 1.5px 4px 0 rgba(0,0,0,0.15)`)
 - **Enable/Disable Blur Effect**: Toggle blur animation during pulse (default: enabled)
@@ -102,6 +104,13 @@ CSS units supported:
 - **Em units**: `0.2em`, `0.5em`
 - **Rem units**: `0.25rem`, `0.5rem`
 
+### Width Animation Examples
+
+Control the animation range:
+- **Minimum Width**: `20px` (default), `10px`, `30px` - Starting size of the pulse animation
+- **Maximum Width**: `120px` (default), `80px`, `150px` - Ending size of the pulse animation
+- **Custom Range**: Set min to `15px` and max to `200px` for a wider animation range
+
 ## What This Theme Does
 
 This theme enhances your browsing experience by:
@@ -118,8 +127,9 @@ This theme enhances your browsing experience by:
 
 - **Animation Duration**: 1.2s cubic-bezier ease infinite alternate pulse
 - **Bar Height**: Customizable thickness (default: 6px)
+- **Animation Width Range**: Customizable minimum (default: 20px) to maximum (default: 120px) width
 - **Positioning**: Absolute positioning at top of browser stack, centered horizontally
-- **Animation Range**: Pulse animation from 20px to 120px width with scale and opacity effects
+- **Animation Range**: Pulse animation with customizable width range, scale and opacity effects
 - **Z-Index**: 9999 for maximum visibility
 - **Conditional Features**: Media queries for optional blur, shadow, and color effects
 
@@ -141,4 +151,4 @@ Created by [rasyidrafi](https://github.com/rasyidrafi)
 
 ---
 
-*Version 2.0.1 - Last updated: August 1, 2025*
+*Version 2.0.2 - Last updated: August 1, 2025*

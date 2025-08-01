@@ -36,6 +36,18 @@
         "defaultValue": "6px"
     },
     {
+        "property": "mod.detaloadingbar.minwidth",
+        "label": "Custom Minimum Width",
+        "type": "string",
+        "defaultValue": "20px"
+    },
+    {
+        "property": "mod.detaloadingbar.maxwidth",
+        "label": "Custom Maximum Width",
+        "type": "string",
+        "defaultValue": "120px"
+    },
+    {
       "property": "mod.detaloadingbar.boxshadow.enabled",
       "label": "Enable/Disable Box Shadow",
       "type": "checkbox",
