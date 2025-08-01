@@ -1,7 +1,7 @@
 {
   "id": "c9ee0d97-d2d6-40fd-8f85-549fe000b868",
   "name": "Deta Loading Bar",
-  "description": "A simple loading bar on top of the page similar to the one used in Deta Surf browser. Currently only works on Zen Browser.",
+  "description": "A sleek animated loading bar that appears at the top of the page during loading, similar to Deta Surf browser. Features customizable colors, gradient effects, blur animation, adjustable thickness, and optional box shadows. Integrates with Zen Browser's theme colors or use custom colors.",
   "homepage": "https://github.com/rasyidrafi/zen-deta-loading-bar",
   "image": "https://github.com/rasyidrafi/zen-deta-loading-bar/blob/main/image.png?raw=true",
   "style": {
@@ -10,11 +10,11 @@
   "readme": "https://raw.githubusercontent.com/rasyidrafi/zen-deta-loading-bar/refs/heads/main/README.md",
   "preferences": "https://raw.githubusercontent.com/rasyidrafi/zen-deta-loading-bar/refs/heads/main/preferences.json",
   "author": "rasyidrafi",
-  "version": "1.3.1",
+  "version": "2.0.1",
   "tags": [
     "Animation"
   ],
   "createdAt": "2025-07-30",
-  "updatedAt": "2025-07-30",
+  "updatedAt": "2025-08-01",
   "fork": ["zen"]
 }

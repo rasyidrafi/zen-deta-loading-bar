@@ -1,16 +1,19 @@
 # Zen Deta Loading Bar
 
-A sleek top loading bar theme extension for Zen Browser that displays an animated progress indicator at the top of the page during loading, similar to the loading bar used in Deta Surf browser.
+A sleek animated loading bar theme extension for Zen Browser that displays a beautiful progress indicator at the top of the page during loading, similar to the loading bar used in Deta Surf browser.
 
 ## Features
 
 - 🎯 **Smooth Top Loading Bar** - Displays an elegant animated loading bar at the top of pages
-- 🎨 **Customizable Colors** - Configure main and middle colors of the loading bar gradient
-- 🌈 **Pulse Animation** - Beautiful pulsing effect that grows and shrinks during loading
+- 🎨 **Zen Theme Integration** - Automatically uses colors from your Zen Browser theme or set custom colors
+- 🌈 **Gradient or Solid Colors** - Choose between gradient effects or single color display
+- 💫 **Blur Animation Effects** - Beautiful blur effects during the pulse animation (optional)
+- 📐 **Customizable Thickness** - Adjustable bar height to match your preference
+- 🌑 **Box Shadow Support** - Optional shadow effects with customizable settings
 - ⚡ **CSS-Only Implementation** - Lightweight solution using pure CSS animations
-- 🎛️ **Easy Toggle** - Simple enable/disable option through preferences
-- 📏 **Adjustable Thickness** - Customizable bar height to match your preference
-- 💫 **High Performance** - Minimal impact on browser performance
+- 🎛️ **Comprehensive Settings** - Multiple customization options through preferences
+- 📏 **Smart Positioning** - Non-intrusive design that doesn't interfere with page interaction
+- 💨 **High Performance** - Minimal impact on browser performance
 
 ## Prerequisites
 
@@ -45,53 +48,57 @@ If the theme is not available in the Sine theme store:
 
 ## Customization Options
 
-This theme includes several customization options that can be configured through Sine's preferences:
+This theme includes extensive customization options that can be configured through Sine's preferences:
 
-### Loading Bar Settings
+### Core Settings
 
-- **Enable Deta Loading Bar**: Master toggle to enable or disable the loading bar (default: enabled)
-- **Main color (Light/Dark mode)**: Primary color for the gradient animation, separately configurable for light and dark mode  
-  - Default (Light): `rgba(243,202,176,255)`  
-  - Default (Dark): `rgba(45,45,45,255)`
-- **Middle color (Light/Dark mode)**: Secondary color for the gradient center, separately configurable for light and dark mode  
-  - Default (Light): `rgba(255,255,255,255)`  
-  - Default (Dark): `rgba(65,65,65,255)`
-- **Box shadow color (Light/Dark mode)**: Shadow color and strength for the loading bar, separately configurable for light and dark mode  
-  - Default (Light): `0 2px 12px 0 rgba(0,0,0,0.25), 0 1.5px 4px 0 rgba(0,0,0,0.15)`  
-  - Default (Dark): `0 2px 12px 0 rgba(255,255,255,0.25), 0 1.5px 4px 0 rgba(255,255,255,0.15)`
+- **Enable/Disable Deta Loading Bar**: Master toggle to enable or disable the loading bar (default: enabled)
+- **Use color from Zen browser theme**: Automatically uses your Zen Browser's theme colors (default: enabled)
+- **Use only main color for the loading bar**: Disable gradient and use solid color (default: disabled)
+
+### Color Customization
+
+- **Main color**: Primary color for the loading bar (default: `rgba(243,202,176,255)`)
+- **Middle color**: Secondary color for gradient center (default: `rgba(255,255,255,255)`)
+
+### Visual Effects
+
 - **Thickness**: Height of the loading bar (default: `6px`)
+- **Enable/Disable Box Shadow**: Toggle shadow effects (default: enabled)
+- **Custom Box shadow**: Customize shadow appearance (default: `0 2px 12px 0 rgba(0,0,0,0.25), 0 1.5px 4px 0 rgba(0,0,0,0.15)`)
+- **Enable/Disable Blur Effect**: Toggle blur animation during pulse (default: enabled)
+- **Blur Intensity**: Adjust blur strength (default: `1.8px`)
 
 ### How to Configure
 
 1. Open Sine menu in your browser
 2. Navigate to the theme settings for "Deta Loading Bar"
-3. Adjust the following options as desired:
-   - Toggle the loading bar on/off as needed
-   - Customize the main color for both light and dark mode
-   - Set the middle color for both light and dark mode
-   - Set the box shadow color for both light and dark mode
-   - Change the thickness to your preferred bar height
+3. Adjust the available options as desired:
+   - Toggle features on/off
+   - Choose between Zen theme colors or custom colors
+   - Customize visual effects and animations
+   - Adjust thickness and shadow settings
 4. Changes will apply automatically
 
 ### Color Examples
 
 You can use various color formats:
-- **RGBA**: `rgba(243,202,176,255)` - Light peach with full opacity (default light)
-- **RGBA**: `rgba(45,45,45,255)` - Dark gray (default dark)
+- **RGBA**: `rgba(243,202,176,255)` - Light peach with full opacity
 - **Hex**: `#573241` - Dark reddish-brown
 - **Named colors**: `steelblue`, `crimson`, `gold`
 - **HSL**: `hsl(120, 100%, 50%)` - Pure green
 
 ### Box Shadow Examples
 
-You can use standard CSS box-shadow syntax:
-- **Light mode (default)**: `0 2px 12px 0 rgba(0,0,0,0.25), 0 1.5px 4px 0 rgba(0,0,0,0.15)`
-- **Dark mode (default)**: `0 2px 12px 0 rgba(255,255,255,0.25), 0 1.5px 4px 0 rgba(255,255,255,0.15)`
+Standard CSS box-shadow syntax:
+- **Default**: `0 2px 12px 0 rgba(0,0,0,0.25), 0 1.5px 4px 0 rgba(0,0,0,0.15)`
+- **Subtle**: `0 1px 3px rgba(0,0,0,0.12)`
+- **Strong**: `0 4px 20px rgba(0,0,0,0.4)`
 
 ### Thickness Examples
 
-You can specify thickness using CSS units:
-- **Pixels (default)**: `6px`
+CSS units supported:
+- **Pixels**: `6px` (default), `8px`, `4px`
 - **Em units**: `0.2em`, `0.5em`
 - **Rem units**: `0.25rem`, `0.5rem`
 
@@ -100,19 +107,21 @@ You can specify thickness using CSS units:
 This theme enhances your browsing experience by:
 
 - **Visual Loading Feedback**: Provides clear indication when pages are loading
-- **Pulse Animation**: Features a growing and shrinking effect with blur transition
-- **Non-intrusive Design**: Sits at the top with minimal visual interference
-- **Smart Positioning**: Centered at the top of the browser stack with high z-index for visibility
-- **No Click Interference**: Pointer events are disabled so the bar doesn't interfere with page interaction
-- **Automatic Display**: Shows only when pages are actually loading
+- **Pulse Animation**: Features a smooth growing and shrinking effect with optional blur
+- **Smart Integration**: Automatically uses Zen Browser's theme colors when enabled
+- **Non-intrusive Design**: Positioned at the top with minimal visual interference
+- **High Visibility**: Centered positioning with high z-index for clear visibility
+- **No Click Interference**: Pointer events disabled so the bar doesn't interfere with page interaction
+- **Automatic Display**: Shows only when the active tab is actually loading
 
 ## Technical Details
 
-- **Animation Duration**: 0.8s ease-out infinite alternate pulse
+- **Animation Duration**: 1.2s cubic-bezier ease infinite alternate pulse
 - **Bar Height**: Customizable thickness (default: 6px)
-- **Positioning**: Absolute positioning at the top of the browser stack, centered horizontally
-- **Animation Effect**: Pulse animation from 25px to 100px width with blur effect
+- **Positioning**: Absolute positioning at top of browser stack, centered horizontally
+- **Animation Range**: Pulse animation from 20px to 120px width with scale and opacity effects
 - **Z-Index**: 9999 for maximum visibility
+- **Conditional Features**: Media queries for optional blur, shadow, and color effects
 
 ## Compatibility
 
@@ -132,4 +141,4 @@ Created by [rasyidrafi](https://github.com/rasyidrafi)
 
 ---
 
-*Version 1.3.1 - Last updated: July 30, 2025*
+*Version 2.0.1 - Last updated: August 1, 2025*

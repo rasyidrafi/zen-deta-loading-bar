@@ -1,33 +1,33 @@
 [
     {
       "property": "mod.detaloadingbar.enabled",
-      "label": "Enable Deta Loading Bar",
+      "label": "Enable/Disable Deta Loading Bar",
       "type": "checkbox",
       "defaultValue": true
     },
     {
-        "property": "mod.detaloadingbar.maincolor.light",
-        "label": "Main color (Light mode)",
+      "property": "mod.detaloadingbar.usefromzen",
+      "label": "Use color from Zen browser theme (will override custom colors)",
+      "type": "checkbox",
+      "defaultValue": true
+    },
+    {
+      "property": "mod.detaloadingbar.singlecolor",
+      "label": "Use only main color for the loading bar (Disable gradient)",
+      "type": "checkbox",
+      "defaultValue": false
+    },
+    {
+        "property": "mod.detaloadingbar.maincolor",
+        "label": "Main color",
         "type": "string",
         "defaultValue": "rgba(243,202,176,255)"
     },
     {
-        "property": "mod.detaloadingbar.maincolor.dark",
-        "label": "Main color (Dark mode)",
-        "type": "string",
-        "defaultValue": "rgba(45,45,45,255)"
-    },
-    {
-        "property": "mod.detaloadingbar.middlecolor.light",
-        "label": "Middle color (Light mode)",
+        "property": "mod.detaloadingbar.middlecolor",
+        "label": "Middle color",
         "type": "string",
         "defaultValue": "rgba(255,255,255,255)"
-    },
-    {
-        "property": "mod.detaloadingbar.middlecolor.dark",
-        "label": "Middle color (Dark mode)",
-        "type": "string",
-        "defaultValue": "rgba(65,65,65,255)"
     },
     {
         "property": "mod.detaloadingbar.thickness",
@@ -36,15 +36,27 @@
         "defaultValue": "6px"
     },
     {
-        "property": "mod.detaloadingbar.boxshadow.light",
-        "label": "Box shadow (Light mode)",
+      "property": "mod.detaloadingbar.boxshadow.enabled",
+      "label": "Enable/Disable Box Shadow",
+      "type": "checkbox",
+      "defaultValue": true
+    },
+    {
+        "property": "mod.detaloadingbar.boxshadow",
+        "label": "Custom Box shadow",
         "type": "string",
         "defaultValue": "0 2px 12px 0 rgba(0,0,0,0.25), 0 1.5px 4px 0 rgba(0,0,0,0.15)"
     },
     {
-        "property": "mod.detaloadingbar.boxshadow.dark",
-        "label": "Box shadow (Dark mode)",
+      "property": "mod.detaloadingbar.blur.enabled",
+      "label": "Enable/Disable Blur Effect",
+      "type": "checkbox",
+      "defaultValue": true
+    },
+    {
+        "property": "mod.detaloadingbar.blur.intensity",
+        "label": "Blur Intensity",
         "type": "string",
-        "defaultValue": "0 2px 12px 0 rgba(255,255,255,0.25), 0 1.5px 4px 0 rgba(255,255,255,0.15)"
+        "defaultValue": "1.8px"
     }
 ]
