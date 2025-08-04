@@ -151,4 +151,4 @@ Created by [rasyidrafi](https://github.com/rasyidrafi)
 
 ---
 
-*Version 2.0.2 - Last updated: August 1, 2025*
+*Version 2.0.3b - Last updated: August 1, 2025*
