@@ -76,7 +76,7 @@
   }
 
   /* Show loading bar ONLY when the current active tab is busy */
-  #main-window:has(.tabbrowser-tab[selected][busy]) .browserStack::before {
+  #main-window:has(.tabbrowser-tab[selected][busy]) .browserStack:has(> #statuspanel[previoustype="status"])::before {
     opacity: 1 !important;
     visibility: visible !important;
     animation: zen-loading-pulse 1.2s cubic-bezier(0.4, 0, 0.2, 1) infinite alternate !important;
