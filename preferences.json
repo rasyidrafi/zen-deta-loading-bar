@@ -33,7 +33,7 @@
         "property": "mod.detaloadingbar.rightcolor",
         "label": "Right color",
         "type": "string",
-        "defaultValue": "rgba(255,255,255,255)"
+        "defaultValue": "rgba(243,202,176,255)"
     },
     {
         "property": "mod.detaloadingbar.thickness",
