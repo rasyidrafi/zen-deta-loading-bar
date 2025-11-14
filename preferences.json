@@ -13,19 +13,25 @@
     },
     {
       "property": "mod.detaloadingbar.singlecolor",
-      "label": "Use only main color for the loading bar (Disable gradient)",
+      "label": "Use only left color for the loading bar (Disable gradient)",
       "type": "checkbox",
       "defaultValue": false
     },
     {
         "property": "mod.detaloadingbar.maincolor",
-        "label": "Main color",
+        "label": "Left color",
         "type": "string",
         "defaultValue": "rgba(243,202,176,255)"
     },
     {
         "property": "mod.detaloadingbar.middlecolor",
         "label": "Middle color",
+        "type": "string",
+        "defaultValue": "rgba(255,255,255,255)"
+    },
+    {
+        "property": "mod.detaloadingbar.rightcolor",
+        "label": "Right color",
         "type": "string",
         "defaultValue": "rgba(255,255,255,255)"
     },
@@ -48,16 +54,16 @@
         "defaultValue": "120px"
     },
     {
+        "property": "mod.detaloadingbar.spacerwidth",
+        "label": "Custom gap between loading bar and top of the window (default is 8px)",
+        "type": "string",
+        "defaultValue": "8px"
+    },
+    {
       "property": "mod.detaloadingbar.boxshadow.enabled",
       "label": "Enable/Disable Box Shadow",
       "type": "checkbox",
       "defaultValue": true
-    },
-    {
-        "property": "mod.detaloadingbar.boxshadow",
-        "label": "Custom Box shadow",
-        "type": "string",
-        "defaultValue": "0 2px 12px 0 rgba(0,0,0,0.25), 0 1.5px 4px 0 rgba(0,0,0,0.15)"
     },
     {
       "property": "mod.detaloadingbar.blur.enabled",
