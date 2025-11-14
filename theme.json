@@ -10,11 +10,9 @@
   "readme": "https://raw.githubusercontent.com/rasyidrafi/zen-deta-loading-bar/refs/heads/main/README.md",
   "preferences": "https://raw.githubusercontent.com/rasyidrafi/zen-deta-loading-bar/refs/heads/main/preferences.json",
   "author": "rasyidrafi",
-  "version": "2.0.3",
-  "tags": [
-    "Animation"
-  ],
+  "version": "2.0.4",
+  "tags": ["Animation"],
   "createdAt": "2025-07-30",
-  "updatedAt": "2025-11-12",
+  "updatedAt": "2025-11-14",
   "fork": ["zen"]
 }

@@ -55,9 +55,15 @@
     },
     {
         "property": "mod.detaloadingbar.spacerwidth",
-        "label": "Custom gap between loading bar and top of the window (default is 8px)",
+        "label": "Custom gap between loading bar and window edge (default is 8px)",
         "type": "string",
         "defaultValue": "8px"
+    },
+    {
+        "property": "mod.detaloadingbar.position.top",
+        "label": "Place loading bar at top (unchecked = bottom)",
+        "type": "checkbox",
+        "defaultValue": true
     },
     {
       "property": "mod.detaloadingbar.boxshadow.enabled",

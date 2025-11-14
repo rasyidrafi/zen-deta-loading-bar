@@ -50,7 +50,6 @@
   #main-window .browserStack::before {
     content: "" !important;
     position: absolute !important;
-    top: var(--mod-detaloadingbar-spacerwidth, 8px) !important;
     left: 50% !important;
     transform: translateX(-50%) !important;
     height: var(--mod-detaloadingbar-thickness, 6px) !important;
@@ -61,6 +60,22 @@
     opacity: 0 !important;
     visibility: hidden !important;
     transition: opacity 0.2s ease, visibility 0.2s ease !important;
+  }
+
+  /* Position at top when checked (default) */
+  @media (-moz-bool-pref: "mod.detaloadingbar.position.top") {
+    #main-window .browserStack::before {
+      top: var(--mod-detaloadingbar-spacerwidth, 8px) !important;
+      bottom: auto !important;
+    }
+  }
+
+  /* Position at bottom when unchecked */
+  @media not (-moz-bool-pref: "mod.detaloadingbar.position.top") {
+    #main-window .browserStack::before {
+      bottom: var(--mod-detaloadingbar-spacerwidth, 8px) !important;
+      top: auto !important;
+    }
   }
 
   @media (-moz-bool-pref: "mod.detaloadingbar.boxshadow.enabled") {
@@ -93,8 +108,9 @@
     }
   }
 
-  /* Show loading bar ONLY when the current active tab is busy */
-  #main-window:has(.tabbrowser-tab[selected][busy]) .browserStack::before {
+  /* Show loading bar */
+  #main-window:has(.tabbrowser-tab[selected="true"][busy="true"])
+    .browserStack:has(#statuspanel:not([hidden]))::before {
     opacity: 1 !important;
     visibility: visible !important;
     animation: zen-loading-pulse 1.2s cubic-bezier(0.4, 0, 0.2, 1) infinite
